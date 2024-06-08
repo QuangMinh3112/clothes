@@ -24,4 +24,4 @@ Route::view('profile', 'profile')
     ->name('profile');
 
 require __DIR__ . '/auth.php';
-require __DIR__ . '/admin/user.php';
+require __DIR__ . '/admin/admin_router.php';

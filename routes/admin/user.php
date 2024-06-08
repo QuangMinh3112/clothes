@@ -1,8 +1,0 @@
-<?php
-
-use Illuminate\Support\Facades\Route;
-
-Route::group(['middleware' => 'auth', 'prefix' => 'users'], function() {
-    Route::get('/', App\Livewire\User\Index::class)->name('user.index');
-});
-?>

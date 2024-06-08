@@ -2,7 +2,7 @@
 <div>
     <x-mary-modal wire:model="createUserModal" class="backdrop-blur" persistent boxClass="max-w-2xl">
         <x-mary-header title="{{ $editModal == true ? 'Chỉnh sửa tài khoản' : 'Thêm mới tài khoản' }}" subtitle=""
-            separator />
+            separator size="text-xl" />
         <x-mary-form wire:submit.prevent="{{ $editModal == true ? 'updateUser' : 'createNewUser' }}">
             <x-mary-input label="Họ và tên" wire:model="form.name" class="border-gray-100" />
             <x-mary-input label="Email" wire:model="form.email" class="border-gray-100" />

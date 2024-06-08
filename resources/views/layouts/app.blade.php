@@ -26,7 +26,6 @@
                 <x-mary-menu-item title="Chỉnh sửa tài khoản" icon="o-wrench" />
                 <x-mary-menu-item title="Đăng xuất" icon="o-arrow-path" />
             </x-mary-dropdown>
-
         </x-slot:actions>
     </x-mary-nav>
     {{-- MAIN --}}
@@ -38,9 +37,12 @@
                 {{-- User --}}
                 <x-mary-menu-item title="Thống kê" icon="o-chart-bar-square" link="/dashboard" />
                 <x-mary-menu-item title="Người dùng" icon="o-user" link="/users" />
-                <x-mary-menu-sub title="Quản lý hàng hoá" icon="o-archive-box">
-                    <x-mary-menu-item title="Nhà cung cấp" icon="o-truck" link="####" />
-                    <x-mary-menu-item title="Archives" icon="o-archive-box" link="####" />
+                <x-mary-menu-sub title="Quản lý sản phẩm" icon="o-archive-box">
+                    {{-- o-truck --}}
+                    <x-mary-menu-item title="Nhà cung cấp" icon="" link="/suppliers" />
+                    <x-mary-menu-item title="Danh mục" icon="" link="/categories" />
+                    <x-mary-menu-item title="Thuộc tính" icon="" link="/attributes" />
+                    <x-mary-menu-item title="Sản phẩm" icon="" link="####" />
                 </x-mary-menu-sub>
                 <x-mary-menu-sub title="Settings" icon="o-cog-6-tooth">
                     <x-mary-menu-item title="Wifi" icon="o-wifi" link="####" />

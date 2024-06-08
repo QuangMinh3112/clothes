@@ -46,4 +46,29 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function scopeFindByName($query, $name)
+    {
+        return $query->where('name', 'like', '%' . $name . '%');
+    }
+    public function scopeFindByEmail($query, $email)
+    {
+        return $query->where('email', 'like', '%' . $email . '%');
+    }
+    public function scopeFindByMinAge($query, $minAge)
+    {
+        return $query->where('age', '>=', $minAge);
+    }
+    public function scopeFindByMaxAge($query, $maxAge)
+    {
+        return $query->where('age', '<=', $maxAge);
+    }
+    public function scopeFindByAge($query, $minAge, $maxAge)
+    {
+        if (!empty($minAge)) {
+            return $query->where('age', '>=', $minAge);
+        }
+        if (!empty($maxAge)) {
+            return $query->where('age', '<=', $maxAge);
+        }
+    }
 }

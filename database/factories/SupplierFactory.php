@@ -18,6 +18,11 @@ class SupplierFactory extends Factory
     {
         return [
             //
+            'name' => fake()->name(),
+            'email' => fake()->email(),
+            'phone_number' => fake()->phoneNumber(),
+            'address' => fake()->address(),
+            'is_active' => fake()->randomElement([0, 1])
         ];
     }
 }
