@@ -54,6 +54,7 @@ class DatabaseSeeder extends Seeder
         }
         \App\Models\User::factory(30)->create();
         \App\Models\Product::factory(30)->create();
+        \App\Models\DetailImages::factory(50)->create();
 
         \App\Models\User::factory()->create([
             'name' => 'Quang Minh',

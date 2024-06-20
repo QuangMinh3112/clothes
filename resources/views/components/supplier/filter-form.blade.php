@@ -1,5 +1,6 @@
 @props(['filterDrawer'])
 <div>
+    <x-mary-header title="Tìm kiếm nhà cung cấp" subtitle="" size="text-xl" />
     <x-mary-drawer wire:model="filterDrawer" class="w-11/12 lg:w-1/3" right>
         <x-mary-form wire:submit.prevent="filterSupplier()">
             <x-mary-input label="Tên nhà cung cấp" wire:model="supplierResult.name" class="border-gray-200" />

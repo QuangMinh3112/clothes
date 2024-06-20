@@ -42,7 +42,7 @@
                     <x-mary-menu-item title="Nhà cung cấp" icon="" link="/suppliers" />
                     <x-mary-menu-item title="Danh mục" icon="" link="/categories" />
                     <x-mary-menu-item title="Thuộc tính" icon="" link="/attributes" />
-                    <x-mary-menu-item title="Sản phẩm" icon="" link="####" />
+                    <x-mary-menu-item title="Sản phẩm" icon="" link="/products" />
                 </x-mary-menu-sub>
                 <x-mary-menu-sub title="Settings" icon="o-cog-6-tooth">
                     <x-mary-menu-item title="Wifi" icon="o-wifi" link="####" />

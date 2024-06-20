@@ -29,7 +29,7 @@
                 @endscope
                 @scope('cell_action', $suppliers)
                     @if ($suppliers->is_active == 1)
-                        <x-mary-button icon="o-pencil-square" class="btn-sm btn-primary" tooltip="Chỉnh sửa"
+                        <x-mary-button icon="o-pencil-square" class="btn-sm" tooltip="Chỉnh sửa"
                             wire:click.prevent='edit({{ $suppliers->id }})' />
                         <x-mary-button icon="c-x-mark" class="btn-sm btn-error" tooltip="Dừng cung cấp"
                             wire:click.prevent='confirm({{ $suppliers->id }})' />
